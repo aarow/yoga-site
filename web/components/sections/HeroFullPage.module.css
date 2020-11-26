@@ -1,0 +1,60 @@
+@import '../../styles/custom-media.css';
+@import '../../styles/shared.module.css';
+/* @import '../styles/custom-properties.css'; */
+
+.root {
+  composes: center from '../../styles/shared.module.css';
+  position: relative;
+  height: 100vh;
+}
+
+.backgroundImage {
+  background-color: var(--color-white, #fff);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  opacity: 0.6;
+  //filter: blur(4px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: var(--width-small);
+  padding: 0 1.5em;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.title {
+  font-weight: 600;
+  font-size: var(--font-title2-size);
+  line-height: var(--font-title2-line-height);
+  margin: 0 auto;
+  text-align: center;
+  font-family: Georgia, serif;
+
+  @media (--media-min-medium) {
+    font-size: var(--font-title1-size);
+    line-height: var(--font-title1-line-height);
+  }
+}
+
+.tagline {
+  margin: 0 0 6rem 0;
+
+  @media (--media-min-medium) {
+    font-size: var(--font-xlarge-size);
+    line-height: var(--font-large-line-height);
+  }
+}
+
+.root p a {
+  color: inherit;
+}

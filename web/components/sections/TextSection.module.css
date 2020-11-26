@@ -1,5 +1,5 @@
 @import '../../styles/custom-media.css';
-@import '../../styles/custom-properties.css';
+/* @import '../styles/custom-properties.css'; */
 
 .root {
   padding: 2rem 0;
@@ -11,7 +11,7 @@
 
 .article {
   width: 100%;
-  max-width: var(--width-small);
+  max-width: var(--width-medium);
   margin: 0 auto;
   padding: 0 1.5rem;
   box-sizing: border-box;
@@ -33,3 +33,5 @@
 .label+.heading {
   margin-top: 0.25em;
 }
+
+

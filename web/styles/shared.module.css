@@ -1,10 +1,25 @@
 @import './custom-media.css';
-@import './custom-properties.css';
+/*@import './custom-properties.css';*/
 
+.flex {
+  display: flex;
+}
+
+.centerHorizontal,
 .center {
   display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.centerVertical {
+  display: flex;
   justify-content: center;
-  align-items: flex-start;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
 }
 
 .container {

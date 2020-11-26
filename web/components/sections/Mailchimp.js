@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import MailchimpForm from 'react-mailchimp-form'
-import styles from './Mailchimp.module.css'
+import PropTypes from 'prop-types';
+import React from 'react';
+import MailchimpForm from 'react-mailchimp-form';
+import styles from './Mailchimp.module.css';
 
-export default function Mailchimp (props) {
-  const {heading, subtitle, actionUrl} = props
+export default function Mailchimp(props) {
+  const { heading, subtitle, actionUrl } = props;
 
   return (
     <section className={styles.root}>
@@ -23,7 +23,7 @@ export default function Mailchimp (props) {
                 required: true
               }
             ]}
-            buttonClassName={styles.button}
+            buttonClassName="btn"
             styles={{
               sendingMsg: {
                 color: '#0652DD'
@@ -51,11 +51,11 @@ export default function Mailchimp (props) {
         )}
       </div>
     </section>
-  )
+  );
 }
 
 Mailchimp.propTypes = {
   heading: PropTypes.string,
   subtitle: PropTypes.string,
   actionUrl: PropTypes.string
-}
+};

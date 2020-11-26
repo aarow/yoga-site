@@ -18,6 +18,11 @@ export default {
       type: 'portableText',
       title: 'Text',
     },
+    {
+      name: 'classes',
+      type: 'string',
+      title: 'Classes'
+    }
   ],
   preview: {
     select: {

@@ -4,6 +4,22 @@ export default {
   title: 'Image with text',
   fields: [
     {
+      name: 'fullPageWidth',
+      type: 'boolean',
+      title: 'Full page width',
+    },
+    {
+      name: 'sideStick',
+      type: 'string',
+      title: 'Stick to side',
+      options: {
+        list: [
+          {title: 'Left', value: 'left'},
+          {title: 'Right', value: 'right'}
+        ]
+      }
+    },
+    {
       name: 'heading',
       type: 'string',
       title: 'Heading',

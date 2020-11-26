@@ -9,7 +9,7 @@ import Cta from '../Cta'
 const builder = imageUrlBuilder(client)
 
 function ImageSection (props) {
-  const {heading, label, text, image, cta} = props
+  const {heading, label, text, image, cta, fullPageWidth, sideStick} = props
 
   if (!image) {
     return null
@@ -17,7 +17,10 @@ function ImageSection (props) {
 
   return (
     <div className={styles.root}>
-      <figure className={styles.content}>
+      <figure
+        className={styles.content}
+        data-full-page-width={fullPageWidth}
+        data-side-stick={sideStick} >
         <img
           src={builder
             .image(image)
@@ -27,7 +30,7 @@ function ImageSection (props) {
           className={styles.image}
           alt={heading}
         />
-        <figcaption>
+        {(heading || text || label || (cta && cta.title) ) && <figcaption>
           <div className={styles.caption}>
             <div className={styles.captionBox}>
               <div className={styles.label}>{label}</div>
@@ -36,7 +39,7 @@ function ImageSection (props) {
               {cta && cta.route && <Cta {...cta} />}
             </div>
           </div>
-        </figcaption>
+        </figcaption>}
       </figure>
     </div>
   )
@@ -53,7 +56,9 @@ ImageSection.propTypes = {
   }),
   backgroundImage: PropTypes.string,
   tagline: PropTypes.string,
-  cta: PropTypes.object
+  cta: PropTypes.object,
+  fullPageWidth: PropTypes.any,
+  sideStick: PropTypes.any
 }
 
 export default ImageSection
