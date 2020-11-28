@@ -5,9 +5,20 @@
 .root {
   composes: center from '../../styles/shared.module.css';
   position: relative;
+  overflow: hidden;
   min-height: 100vh;
   padding: 6rem 0;
+  background-color: var(--color-white, #fff);
+  background-repeat: no-repeat;
+  background-position: center;
 
+  @media (--media-min-medium) {
+    background-size: cover;
+
+    background-attachment: fixed;
+  }
+
+  &:before,
   &:after {
     content: '';
     display: block;
@@ -15,23 +26,18 @@
     left: 0;
     bottom: 0;
     width: 100%;
+  }
+
+  &:after {
     height: 4rem;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
   }
-}
 
-.backgroundImage {
-  background-color: var(--color-white, #fff);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: fixed;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  &:before {
+    background-color: var(--color-white, #fff);
+    opacity: 0.6;
+    height: 100%;
+  }
 }
 
 .content {

@@ -21,15 +21,14 @@ function HeroFullPage(props) {
     calendlyItem: { url: calendlyUrl, calendlyPresentation, popupText: calendlyPopupText }
   } = props;
 
-  const style = backgroundImage
+  const backgroundImageStyle = backgroundImage
     ? {
         backgroundImage: `url("${urlFor(backgroundImage).width(2000).auto('format').url()}")`
       }
     : {};
 
   return (
-    <div className={[styles.root, styles.centerHorizontal, styles.centerVertical].join(' ')}>
-      <div className={styles.backgroundImage} style={style} />
+    <div style={backgroundImageStyle} className={[styles.root, styles.centerHorizontal, styles.centerVertical].join(' ')}>
       <div className={styles.content}>
         <h1 className={styles.title} dangerouslySetInnerHTML={{ __html: heading }} />
         <div className={styles.tagline}>{tagline && <SimpleBlockContent blocks={tagline} />}</div>
