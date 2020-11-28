@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 
 import { LogoJsonLd } from 'next-seo';
-import Header from './Header';
+// import Header from './Header';
 import Footer from './Footer';
 
 function Layout(props) {
@@ -27,7 +27,7 @@ function Layout(props) {
         <link rel="stylesheet" href={fontCSS} />
       </Head>
       <div className="container">
-        <Header title={title} navItems={mainNavigation} logo={logo} />
+        {/*<Header title={title} navItems={mainNavigation} logo={logo} />*/}
         <div className="main-content content">{children}</div>
         <Footer navItems={footerNavigation} text={footerText} />
         {logoUrl && url && <LogoJsonLd url={url} logo={logoUrl} />}

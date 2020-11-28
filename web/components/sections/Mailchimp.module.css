@@ -20,6 +20,8 @@
 }
 
 .heading {
+  font-family: var(--font-family-title);
+  letter-spacing: -1px;
   text-align: center;
   font-size: var(--font-title3-size);
   line-height: var(--font-title3-line-height);
@@ -29,11 +31,16 @@
     font-size: var(--font-title2-size);
     line-height: var(--font-title2-line-height);
   }
+  @media (--media-min-large) {
+    font-size: var(--font-title1-size);
+    line-height: var(--font-title1-line-height);
+  }
 }
 
 .subtitle {
   text-align: center;
   margin: 0.5rem 0 1.5rem;
+  font-size: 1.5rem;
 }
 
 .form {

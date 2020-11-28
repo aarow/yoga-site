@@ -5,7 +5,8 @@
 .root {
   composes: center from '../../styles/shared.module.css';
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 6rem 0;
 }
 
 .backgroundImage {
@@ -34,7 +35,7 @@
 .title {
   font-weight: 400;
   font-size: 48px;
-  line-height: 1;
+  line-height: 0.9;
   margin: 0 auto;
   text-align: center;
   font-family: var(--font-family-title);
@@ -42,12 +43,10 @@
 
   @media (--media-min-small) {
     font-size: 10vw;
-    line-height: 1;
   }
 
   @media (--media-min-large) {
     font-size: 108px;
-    line-height: 1;
   }
 }
 
