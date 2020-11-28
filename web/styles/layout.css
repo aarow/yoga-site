@@ -1,13 +1,15 @@
 /* @import './custom-properties.css'; */
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
 html {
-  font-family: var(--font-family-sans);
-  font-size: var(--font-base-size);
+  font-family: var(--font-family-reading);
   line-height: var(--font-base-line-height);
+  font-size: 16px;
 }
 
 body {
@@ -27,5 +29,3 @@ body,
 :global(.content) {
   min-height: calc(100% - 84px - 218px);
 }
-
-

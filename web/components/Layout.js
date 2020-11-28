@@ -17,11 +17,14 @@ function Layout(props) {
   const { title, mainNavigation, footerNavigation, footerText, logo, url } = config;
   const logoUrl = logo && logo.asset && logo.asset.url;
 
+  const fontCSS = 'https://use.typekit.net/xxc8xyw.css';
+
   return (
     <>
       <Head>
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width, viewport-fit=cover" />
+        <link rel="stylesheet" href={fontCSS} />
       </Head>
       <div className="container">
         <Header title={title} navItems={mainNavigation} logo={logo} />

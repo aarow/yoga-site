@@ -31,7 +31,7 @@ function HeroFullPage(props) {
     <div className={[styles.root, styles.centerHorizontal, styles.centerVertical].join(' ')}>
       <div className={styles.backgroundImage} style={style} />
       <div className={styles.content}>
-        <h1 className={styles.title}>{heading}</h1>
+        <h1 className={styles.title} dangerouslySetInnerHTML={{ __html: heading }} />
         <div className={styles.tagline}>{tagline && <SimpleBlockContent blocks={tagline} />}</div>
         <div>
           <Calendly

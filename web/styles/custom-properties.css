@@ -3,8 +3,12 @@
   --narrow-container: 40rem;
 
   --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
+  //--font-family-titles: eloquent-jf-pro, serif;
+  --font-family-reading: gelo, serif;
+  --font-family-title: eloquent-jf-pro, serif;
 
   --color-black: #193c48;
+  --color-shadow: rgba(25, 60, 72, 0.25);
   --color-dark-gray: #32373e;
   --color-gray: #697a90;
   --color-light-gray: #b4bcc7;
@@ -16,19 +20,26 @@
   --unit: 16;
   --font-micro-size: calc(10 / var(--unit) * 1rem); /* 10px */
   --font-micro-line-height: calc(12 / 10); /* 12px */
+
   --font-small-size: calc(14 / var(--unit) * 1rem); /* 14px */
   --font-small-line-height: calc(21 / 14); /* 21px */
+
   --font-base-size: 1em; /* 16px */
   --font-base-line-height: calc(24 / var(--unit)); /* 24px */
-  --font-large-size: calc(18 / var(--unit) * 1rem); /* 18px */
-  --font-xlarge-size: calc(24 / var(--unit) * 1rem); /* 18px */
-  --font-large-line-height: calc(27 / 18); /* 27px */
 
-  --font-title3-size: calc(21 / var(--unit) * 1rem); /* 21px */
+  --font-large-size: calc(18 / var(--unit) * 1rem); /* 18px */
+  --font-large-line-height: calc(28 / 18); /* 27px */
+
+  --font-xlarge-size: calc(24 / var(--unit) * 1rem); /* 24px */
+  --font-xlarge-line-height: calc(32 / 18); /* 27px */
+
+  --font-title3-size: calc(22 / var(--unit) * 1rem); /* 21px */
   --font-title3-line-height: calc(30 / 21); /* 30px */
-  --font-title2-size: calc(24 / var(--unit) * 1rem); /* 24px */
+
+  --font-title2-size: calc(28 / var(--unit) * 1rem); /* 24px */
   --font-title2-line-height: calc(33 / 24); /* 33px */
-  --font-title1-size: calc(49 / var(--unit) * 1rem); /* 49px */
+
+  --font-title1-size: calc(48 / var(--unit) * 1rem); /* 49px */
   --font-title1-line-height: calc(57 / 49); /* 57px */
 
   /* Widths */

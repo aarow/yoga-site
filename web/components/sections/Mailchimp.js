@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import MailchimpForm from 'react-mailchimp-form';
+import MailchimpForm from '../MailchimpForm';
 import styles from './Mailchimp.module.css';
 
 export default function Mailchimp(props) {
@@ -19,11 +19,11 @@ export default function Mailchimp(props) {
                 name: 'EMAIL',
                 placeholder: 'Email',
                 type: 'email',
-                className: styles.email,
                 required: true
               }
             ]}
-            buttonClassName="btn"
+            buttonClassName={styles.btn}
+            inputClassName={styles.formInput}
             styles={{
               sendingMsg: {
                 color: '#0652DD'

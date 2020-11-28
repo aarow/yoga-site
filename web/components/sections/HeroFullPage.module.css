@@ -32,21 +32,29 @@
 }
 
 .title {
-  font-weight: 600;
-  font-size: var(--font-title2-size);
-  line-height: var(--font-title2-line-height);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1;
   margin: 0 auto;
   text-align: center;
-  font-family: Georgia, serif;
+  font-family: var(--font-family-title);
+  letter-spacing: -1px;
 
-  @media (--media-min-medium) {
-    font-size: var(--font-title1-size);
-    line-height: var(--font-title1-line-height);
+  @media (--media-min-small) {
+    font-size: 10vw;
+    line-height: 1;
+  }
+
+  @media (--media-min-large) {
+    font-size: 108px;
+    line-height: 1;
   }
 }
 
 .tagline {
   margin: 0 0 6rem 0;
+  font-size: var(--font-xlarge-size);
+  line-height: var(--font-large-line-height);
 
   @media (--media-min-medium) {
     font-size: var(--font-xlarge-size);
