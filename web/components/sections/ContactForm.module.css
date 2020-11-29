@@ -1,0 +1,51 @@
+@import '../../styles/global/form.pcss';
+@import '../../styles/global/buttons.pcss';
+@import '../../styles/custom-media.css';
+@import '../../styles/global/alignment.css';
+
+.backgroundColor {
+  background-color: var(--color-very-light-gray);
+  padding: 1rem 0;
+}
+
+.root {
+  width: var(--width-small);
+  max-width: 100%;
+  margin: 6rem auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+
+  @media (--media-min-small) {
+    width: var(--width-small);
+    padding: 0 1.5rem;
+  }
+}
+
+.heading {
+  font-family: var(--font-family-title);
+  letter-spacing: -1px;
+  text-align: center;
+  font-size: var(--font-title3-size);
+  line-height: var(--font-title3-line-height);
+  margin: 0 0 0.5rem;
+
+  @media (--media-min-medium) {
+    font-size: var(--font-title2-size);
+    line-height: var(--font-title2-line-height);
+  }
+}
+
+.tagline {
+  text-align: center;
+  margin: 0.25rem 0 1rem;
+  font-size: 1.25rem;
+}
+
+.btn {
+  width: 10rem;
+}
+
+.secondaryTextColor {
+  color: var(--color-gray);
+}

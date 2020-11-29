@@ -40,7 +40,11 @@
 .subtitle {
   text-align: center;
   margin: 0.5rem 0 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+
+  @media (--media-min-medium) {
+    font-size: 1.5rem;
+  }
 }
 
 .form {
@@ -58,7 +62,6 @@
 
   @media (--media-min-medium) {
     margin: 0;
-    border-right: none;
   }
 }
 

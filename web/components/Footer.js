@@ -1,33 +1,33 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'next/link'
-import {withRouter} from 'next/router'
-import styles from './Footer.module.css'
-import SimpleBlockContent from './SimpleBlockContent'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'next/link';
+import { withRouter } from 'next/router';
+import styles from './Footer.module.css';
+import SimpleBlockContent from './SimpleBlockContent';
+import RenderSections from '../components/RenderSections';
 
-function Footer (props) {
-  const {navItems, text, router} = props
+function Footer(props) {
+  const { navItems, text, router, footerSection } = props;
   return (
     <div className={styles.root}>
       <nav>
         <ul className={styles.items}>
           {navItems &&
-            navItems.map(item => {
-              const isActive =
-                router.pathname === '/LandingPage' && router.query.slug === item.slug.current
+            navItems.map((item) => {
+              const isActive = router.pathname === '/LandingPage' && router.query.slug === item.slug.current;
               return (
                 <li key={item._id} className={styles.item}>
                   <Link
                     href={{
                       pathname: '/LandingPage',
-                      query: {slug: item.slug.current}
+                      query: { slug: item.slug.current }
                     }}
                     as={`/${item.slug.current}`}
                   >
                     <a data-is-active={isActive ? 'true' : 'false'}>{item.title}</a>
                   </Link>
                 </li>
-              )
+              );
             })}
         </ul>
       </nav>
@@ -35,10 +35,11 @@ function Footer (props) {
         <SimpleBlockContent blocks={text} />
       </div>
     </div>
-  )
+  );
 }
 
 Footer.propTypes = {
+  footerSection: PropTypes.any,
   navItems: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
@@ -54,6 +55,6 @@ Footer.propTypes = {
       slug: PropTypes.string
     })
   })
-}
+};
 
-export default withRouter(Footer)
+export default withRouter(Footer);

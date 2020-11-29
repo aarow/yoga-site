@@ -14,7 +14,6 @@
 
   @media (--media-min-medium) {
     background-size: cover;
-
     background-attachment: fixed;
   }
 

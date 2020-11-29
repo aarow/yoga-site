@@ -26,6 +26,20 @@ export default {
         { type: 'textSection' },
         { type: 'figure' },
         { type: 'calendly' },
+        { type: 'contactForm' },
+      ],
+    },
+    {
+      name: 'footerSection',
+      type: 'array',
+      title: 'Footer sections',
+      of: [
+        { type: 'imageSection' },
+        { type: 'mailchimp' },
+        { type: 'textSection' },
+        { type: 'figure' },
+        { type: 'calendly' },
+        { type: 'contactForm' },
       ],
     },
     {

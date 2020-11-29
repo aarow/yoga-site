@@ -20,6 +20,7 @@ import link from './objects/link'
 import portableText from './objects/portableText'
 import simplePortableText from './objects/simplePortableText'
 import calendly from './objects/calendly'
+import contactForm from './objects/contactForm'
 
 // Landing page sections
 import hero from './objects/hero'
@@ -54,5 +55,6 @@ export default createSchema({
     leftAlignment,
     calendly,
     heroFullPage,
+    contactForm,
   ]),
 })
