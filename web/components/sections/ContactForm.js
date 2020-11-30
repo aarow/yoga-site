@@ -31,6 +31,7 @@ export default function ContactForm(props) {
               Send
             </button>
           </p>
+          <input type="hidden" name="form-name" value="contact" />
         </form>
       </div>
     </div>
