@@ -5,3 +5,6 @@ export { default as ImageSection } from './ImageSection';
 export { default as Calendly } from './Calendly';
 export { default as HeroFullPage } from './HeroFullPage';
 export { default as ContactForm } from './ContactForm';
+export { default as Figure } from './Figure';
+export { default as PageList } from './PageListSection';
+export { default as ArticleList } from './ArticleList';

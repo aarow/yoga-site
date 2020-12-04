@@ -1,13 +1,8 @@
 export default {
   type: 'object',
-  name: 'textSection',
-  title: 'Text',
+  name: 'pageList',
+  title: 'Page List',
   fields: [
-    {
-      name: 'label',
-      type: 'string',
-      title: 'Label',
-    },
     {
       name: 'heading',
       type: 'string',
@@ -26,25 +21,25 @@ export default {
       },
     },
     {
-      name: 'text',
-      title: 'Text',
-      type: 'array',
-      of: [{ type: 'block' }],
+      name: 'tagline',
+      type: 'simplePortableText',
+      title: 'Tagline',
     },
     {
-      name: 'classes',
-      type: 'string',
-      title: 'Classes',
+      title: 'Pages',
+      name: 'pages',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'page' }] }],
     },
   ],
   preview: {
     select: {
-      heading: 'heading',
+      title: 'heading',
     },
-    prepare({ heading }) {
+    prepare({ title }) {
       return {
-        title: `${heading}`,
-        subtitle: 'Text section',
+        title,
+        subtitle: 'Page list section',
       }
     },
   },

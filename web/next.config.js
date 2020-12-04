@@ -41,7 +41,8 @@ module.exports = {
       return {
         // Routes imported from sanity
         ...routes.filter(({ slug }) => slug.current).reduce(reduceRoutes, {}),
-        '/custom-page': { page: '/CustomPage' }
+        '/custom-page': { page: '/CustomPage' },
+        '/articles': { page: '/ArticlesPage' }
       };
     });
   }

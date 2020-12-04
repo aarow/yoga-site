@@ -1,11 +1,16 @@
 export default {
   name: 'figure',
   title: 'Image',
-  type: 'image',
+  type: 'object',
   options: {
     hotspot: true,
   },
   fields: [
+    {
+      name: 'image',
+      type: 'image',
+      title: 'Image',
+    },
     {
       title: 'Caption',
       name: 'caption',
@@ -30,4 +35,4 @@ export default {
       title: 'caption',
     },
   },
-};
+}

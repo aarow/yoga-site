@@ -27,6 +27,8 @@ export default {
         { type: 'figure' },
         { type: 'calendly' },
         { type: 'contactForm' },
+        { type: 'pageList' },
+        { type: 'articleList' },
       ],
     },
     {

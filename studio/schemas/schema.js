@@ -8,7 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import page from './documents/page'
 import route from './documents/route'
 import siteConfig from './documents/siteConfig'
-import post from './documents/post'
+import article from './documents/article'
 import author from './documents/author'
 
 // Object types
@@ -21,6 +21,7 @@ import portableText from './objects/portableText'
 import simplePortableText from './objects/simplePortableText'
 import calendly from './objects/calendly'
 import contactForm from './objects/contactForm'
+import articleList from './objects/articleList'
 
 // Landing page sections
 import hero from './objects/hero'
@@ -29,6 +30,7 @@ import mailchimp from './objects/mailchimp'
 import textSection from './objects/textSection'
 import leftAlignment from './objects/alignment'
 import heroFullPage from './objects/heroFullPage'
+import pageList from './objects/pageList'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -50,11 +52,13 @@ export default createSchema({
     simplePortableText,
     siteConfig,
     textSection,
-    post,
+    article,
     author,
     leftAlignment,
     calendly,
     heroFullPage,
     contactForm,
+    pageList,
+    articleList,
   ]),
 })

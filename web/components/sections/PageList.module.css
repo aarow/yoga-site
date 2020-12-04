@@ -62,3 +62,18 @@
 .label + .heading {
   margin-top: 0.25em;
 }
+
+.row {
+  grid: auto-flow / 1fr 1fr 1fr;
+
+  @media (--media-min-medium) {
+    grid: auto-flow / 1fr 1fr;
+  }
+
+  @media (--media-min-large) {
+    grid: auto-flow / 1fr 1fr 1fr;
+  }
+}
+
+.col {
+}

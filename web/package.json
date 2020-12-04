@@ -15,6 +15,7 @@
     "@sanity/client": "^2.0.0",
     "@sanity/image-url": "^0.140.19",
     "@zeit/next-css": "^1.0.1",
+    "date-fns": "^2.16.1",
     "groq": "^0.140.0",
     "jsonp": "^0.2.1",
     "lodash": "^4.17.20",
@@ -25,7 +26,8 @@
     "react-dom": "^16.14.0",
     "react-inlinesvg": "^2.1.1",
     "react-mailchimp-form": "^1.0.1",
-    "react-mailchimp-subscribe": "^2.1.0"
+    "react-mailchimp-subscribe": "^2.1.0",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@babel/runtime-corejs2": "^7.12.5",
